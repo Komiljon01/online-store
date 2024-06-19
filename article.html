@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Fontawesome icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- Stylesheet -->
+   <link rel="stylesheet" href="./assets/css/article.css">
+
+   <title>Статья</title>
+</head>
+
+<body>
+
+   <section id="location-menu">
+      <div class="container">
+         <div class="location-menu-content flex between center">
+            <div class="locations flex center">
+               <div class="location-city">
+                  <form action="#">
+                     <label for="location-city"><i class="location-icon fa-solid fa-location-dot"></i>Ваш город:</label>
+                     <select id="location-city" name="cities">
+                        <option value="Константинополь">Константинополь</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Екатеринбург">Екатеринбург</option>
+                        <option value="Махачкала">Махачкала</option>
+                     </select>
+                  </form>
+               </div>
+               <div class="location-office">
+                  <p class="location-office-text">
+                     <i class="location-icon fa-solid fa-location-dot"></i>
+                     <span class="bold">Наш офис:</span> Москва, ул. Новокосимская д.7
+                  </p>
+               </div>
+            </div>
+            <ul class="location-lists flex center">
+               <li><a href="./article.html">Статьи</a></li>
+               <li><a href="#">Оплата</a></li>
+               <li><a href="#">Гарантия</a></li>
+               <li><a href="#">Дилерам</a></li>
+               <li><a href="#">Вакансии</a></li>
+            </ul>
+         </div>
+      </div>
+   </section>
+
+   <section id="search-tel-menu">
+      <div class="container">
+         <div class="search-tel-menu-content flex center between">
+            <div class="color-site">
+               <div class="color-site-buttons flex center">
+                  <a href="#" class="color-site-btn"></a>
+                  <a href="#" class="color-site-btn"></a>
+                  <a href="#" class="color-site-btn"></a>
+               </div>
+               <h3 class="color-site-text">Логотип вашего магазина</h3>
+            </div>
+
+            <div class="search-bar-menu flex">
+               <ul class="search-text-lists flex center">
+                  <li class="flex center"><i class="check-icon fa-solid fa-check"></i> Лучшие цены</li>
+                  <li class="flex center"><i class="check-icon fa-solid fa-check"></i> Бесплатная доставка</li>
+                  <li class="flex center"><i class="check-icon fa-solid fa-check"></i> Гарантия от 3х лет</li>
+                  <li class="flex center"><i class="check-icon fa-solid fa-check"></i> Более 1 000 товаров</li>
+               </ul>
+
+               <form action="#" class="search-form flex center">
+                  <div class="search-btn-box">
+                     <label for="search"></label>
+                     <input id="search" type="search" placeholder="Поиск по каталогу...">
+                  </div>
+                  <button class="search-form-btn" type="submit">Найти</button>
+               </form>
+            </div>
+
+            <div class="contact-details flex">
+               <ul class="contacts-lists flex">
+                  <li>
+                     <i class="fa-regular fa-clock"></i> Ежедневно с 9:00 до 21:00
+                  </li>
+                  <li>
+                     <a href="tel:8 (800) 800-00-00">8 (800) <b class="bold-number">800-00-00</b></a>
+                  </li>
+                  <li>
+                     <a href="tel:8 (495) 700-00-00">8 (495) <b class="bold-number">700-00-00</b></a>
+                  </li>
+               </ul>
+               <div class="mail-order flex">
+                  <a class="mail-link flex center" href="mailto:youremail@mailbox.ru"><i
+                        class="fa-solid fa-envelope"></i>youremail@mailbox.ru</a>
+                  <a class="order-btn" href="#modal">Заказать звонок</a>
+                  <div id="modal">
+                     <div class="modal-content">
+                        <h2 class="modal-content-title">
+                           Мы вам перезвоним
+                        </h2>
+                        <p class="modal-content-text">
+                           Заполните, пожалуйста, поля ниже, чтобы мы могли
+                           связаться с вами. Добавьте комментарий, чтобы менеджер
+                           оперативно ответил на все ваши вопросы
+                        </p>
+                        <form action="#" class="modal-form">
+                           <label for="name"></label>
+                           <input type="text" id="name" placeholder="Имя *">
+                           <label for="tel"></label>
+                           <input type="tel" id="tel" placeholder="Телефон *">
+                           <label for="comment"></label>
+                           <textarea id="comment" width="0" cols="30" rows="10"
+                              placeholder="Ваш комментарий"></textarea>
+
+                           <div class="rules flex center">
+                              <input type="checkbox" id="check">
+                              <label for="check">
+                                 Согласен с <b>обработкой персональных данных</b>
+                              </label>
+                           </div>
+
+                           <button class="modal-submit-btn" type="submit">Заказать звонок</button>
+                        </form>
+                        <a class="close-modal" href="#"><i class="fa-solid fa-xmark"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+   </section>
+
+   <section id="catalogue">
+      <div class="container">
+         <div class="catalogue-navbar flex center">
+            <a class="catalogue-link flex center" href="#">
+               <i class="fa-solid fa-bars"></i>
+               Каталог товаров
+            </a>
+            <ul class="catalogue-lists flex center between">
+               <li><a href="./company.html">О компании</a></li>
+               <li><a href="./reviews.html">Отзывы</a></li>
+               <li><a href="./our-work.html">Наши работы</a></li>
+               <li><a href="./delivery.html">Доставка</a></li>
+               <li><a href="./contacts.html">Контакты</a></li>
+            </ul>
+         </div>
+      </div>
+   </section>
+
+   <section id="res-navbar">
+      <div class="container">
+         <div class="res-navbar-content flex center between">
+            <div class="res-bars">
+               <label class="res-bar" for="res-bar"><i class="fa-solid fa-bars"></i></label>
+               <input type="checkbox" id="res-bar">
+               <div class="res-bars-content">
+                  <label class="res-exit" for="res-bar"><i class="fa-solid fa-xmark"></i></label>
+                  <div class="location-menu-content flex between center">
+                     <div class="locations flex center">
+                        <div class="location-city">
+                           <form action="#">
+                              <label for="location-city"><i class="location-icon fa-solid fa-location-dot"></i>Ваш
+                                 город:</label>
+                              <select id="location-city" name="cities">
+                                 <option value="Константинополь">Константинополь</option>
+                                 <option value="Москва">Москва</option>
+                                 <option value="Екатеринбург">Екатеринбург</option>
+                                 <option value="Махачкала">Махачкала</option>
+                              </select>
+                           </form>
+                        </div>
+                        <div class="location-office">
+                           <p class="location-office-text">
+                              <i class="location-icon fa-solid fa-location-dot"></i>
+                              <span class="bold">Наш офис:</span> Москва, ул. Новокосимская д.7
+                           </p>
+                        </div>
+                     </div>
+                     <ul class="location-lists flex center">
+                        <li><a href="#">Статьи</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Дилерам</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                     </ul>
+                     <div class="color-site">
+                        <div class="color-site-buttons flex center">
+                           <a href="#" class="color-site-btn"></a>
+                           <a href="#" class="color-site-btn"></a>
+                           <a href="#" class="color-site-btn"></a>
+                        </div>
+                        <h3 class="color-site-text">Логотип вашего магазина</h3>
+                     </div>
+                     <div class="contact-details flex">
+                        <ul class="contacts-lists flex">
+                           <li>
+                              <i class="fa-regular fa-clock"></i> Ежедневно с 9:00 до 21:00
+                           </li>
+                           <li>
+                              <a href="tel:8 (800) 800-00-00">8 (800) <b class="bold-number">800-00-00</b></a>
+                           </li>
+                           <li>
+                              <a href="tel:8 (495) 700-00-00">8 (495) <b class="bold-number">700-00-00</b></a>
+                           </li>
+                        </ul>
+                        <div class="mail-order flex">
+                           <a class="mail-link flex center" href="mailto:youremail@mailbox.ru"><i
+                                 class="fa-solid fa-envelope"></i>youremail@mailbox.ru</a>
+                           <a class="order-btn" href="#res-modal">Заказать звонок</a>
+                           <div id="res-modal">
+                              <div class="modal-content">
+                                 <h2 class="modal-content-title">
+                                    Мы вам перезвоним
+                                 </h2>
+                                 <p class="modal-content-text">
+                                    Заполните, пожалуйста, поля ниже, чтобы мы могли
+                                    связаться с вами. Добавьте комментарий, чтобы менеджер
+                                    оперативно ответил на все ваши вопросы
+                                 </p>
+                                 <form action="#" class="modal-form">
+                                    <label for="name"></label>
+                                    <input type="text" id="name" placeholder="Имя *">
+                                    <label for="tel"></label>
+                                    <input type="tel" id="tel" placeholder="Телефон *">
+                                    <label for="comment"></label>
+                                    <textarea id="comment" width="0" cols="30" rows="10"
+                                       placeholder="Ваш комментарий"></textarea>
+
+                                    <div class="rules flex center">
+                                       <input type="checkbox" id="check">
+                                       <label for="check">
+                                          Согласен с <b>обработкой персональных данных</b>
+                                       </label>
+                                    </div>
+
+                                    <button class="modal-submit-btn" type="submit">Заказать звонок</button>
+                                 </form>
+                                 <a class="close-modal" href="#"><i class="fa-solid fa-xmark"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <form action="#" class="res-search-form">
+               <label for="res-search"></label>
+               <input type="search" id="res-search" placeholder="Поиск по каталогу...">
+            </form>
+            <a class="res-phone" href="tel:8 (800) 800-00-00"><i class="fa-solid fa-phone"></i></a>
+         </div>
+      </div>
+   </section>
+
+   <section id="res-categories">
+      <div class="container">
+         <a class="catalogue-link flex center" href="#">
+            <i class="fa-solid fa-bars"></i>
+            Каталог товаров
+         </a>
+      </div>
+   </section>
+
+   <section id="article">
+      <div class="container">
+         <div class="article-intro flex">
+            <a href="./index.html">Главная</a>
+            <span>»</span>
+            <a href="#">Статьи</a>
+         </div>
+
+         <h2 class="article-title">
+            Как выбрать беседку для дачи
+         </h2>
+
+         <div class="article-content">
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus blandit placerat a tempor pellentesque egestas. Lectus est, tortor vulputate cras posuere suspendisse pulvinar sit. Placerat malesuada volutpat vulputate placerat vitae mi enim. Nisl et lacinia commodo nisi. Viverra habitant elementum sagittis felis molestie integer. Cursus pulvinar semper praesent ut. Facilisis augue feugiat nam leo duis. Nulla lacus non, tristique et ac tempor amet. Ultricies maecenas ut pretium massa. Pulvinar adipiscing et, pellentesque sollicitudin urna diam facilisi tristique. Rhoncus curabitur commodo enim proin vitae non sit vel. Sed augue arcu pellentesque turpis massa ornare auctor consequat.
+            </p>
+            <div class="article-img-card">
+               <img src="./assets/img/article-img1.png" alt="article-img">
+               <img src="./assets/img/article-img2.png" alt="article-img">
+            </div>
+            <p>
+               Sem egestas neque, turpis habitant sit platea egestas pulvinar eleifend. Pulvinar massa tempus nibh dis dui. Volutpat mauris nec, facilisis diam vitae. Sagittis, eros, porttitor varius vestibulum ullamcorper adipiscing sit vitae lobortis. In duis lorem amet, eget. Integer vestibulum sit libero quisque orci. Luctus quis tristique turpis tortor, magna dis nibh lorem risus. Quam at risus, varius sit tempus, vel egestas nulla.
+            </p>
+            <p>
+               Fringilla quam consequat in blandit. Sit id volutpat integer augue consectetur mauris egestas faucibus quis. Porttitor scelerisque egestas leo malesuada enim elementum, magna dui habitasse. Ullamcorper vestibulum enim, dolor id varius cursus at sed. Duis id massa odio vulputate dui. Amet fusce mauris, justo neque tincidunt et. Neque, et hendrerit scelerisque dolor pulvinar lectus quis id sit. Id tempor adipiscing eget at eget vel id. Leo vitae, nec massa senectus est, nulla vulputate. Phasellus pretium sed nisl augue cras. In diam imperdiet in lorem.
+            </p>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus blandit placerat a tempor pellentesque egestas. Lectus est, tortor vulputate cras posuere suspendisse pulvinar sit. Placerat malesuada volutpat vulputate placerat vitae mi enim. Nisl et lacinia commodo nisi. Viverra habitant elementum sagittis felis molestie integer. Cursus pulvinar semper praesent ut. Facilisis augue feugiat nam leo duis. Nulla lacus non, tristique et ac tempor amet. Ultricies maecenas ut pretium massa. Pulvinar adipiscing et, pellentesque sollicitudin urna diam facilisi tristique. Rhoncus curabitur commodo enim proin vitae non sit vel. Sed augue arcu pellentesque turpis massa ornare auctor consequat.
+            </p>
+         </div>
+
+         <div class="similar-articles">
+            <h2 class="similar-articles-title flex">
+               Похожие статьи
+               <span class="line"></span>
+            </h2>
+
+            <div class="similar-articles-cards">
+               <div class="similar-article-card">
+                  <img src="./assets/img/similar-articles.png" alt="similar-article-img">
+                  <h3 class="similar-article-card-title">Как выбрать беседку для дачи</h3>
+                  <p class="similar-article-date">19 сентября 2021</p>
+                  <p class="similar-article-card-text">
+                     Дружная команда инженеров, наладчиков и мастеров 
+                     высокого класса с большим вниманием и любовью
+                     относятся к своей работе.
+                  </p>
+                  <a class="similar-article-card-link" href="#">Читать далее ></a>
+               </div>
+               <div class="similar-article-card">
+                  <img src="./assets/img/similar-articles.png" alt="similar-article-img">
+                  <h3 class="similar-article-card-title">Как выбрать беседку для дачи</h3>
+                  <p class="similar-article-date">19 сентября 2021</p>
+                  <p class="similar-article-card-text">
+                     Дружная команда инженеров, наладчиков и мастеров 
+                     высокого класса с большим вниманием и любовью
+                     относятся к своей работе.
+                  </p>
+                  <a class="similar-article-card-link" href="#">Читать далее ></a>
+               </div>
+               <div class="similar-article-card">
+                  <img src="./assets/img/similar-articles.png" alt="similar-article-img">
+                  <h3 class="similar-article-card-title">Как выбрать беседку для дачи</h3>
+                  <p class="similar-article-date">19 сентября 2021</p>
+                  <p class="similar-article-card-text">
+                     Дружная команда инженеров, наладчиков и мастеров 
+                     высокого класса с большим вниманием и любовью
+                     относятся к своей работе.
+                  </p>
+                  <a class="similar-article-card-link" href="#">Читать далее ></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="catalogue-banner">
+      <div class="container">
+         <div class="catalogue-products">
+            <h2 class="catalogue-products-title">Категории</h2>
+            <div class="catalogue-products-cards">
+               <div class="catalogue-product-card flex">
+                  <div class="catalogue-product-card-content">
+                     <h3 class="catalogue-product-card-title">
+                        Беседки
+                     </h3>
+                     <ul class="catalogue-product-card-lists flex">
+                        <li><a href="#">Подкатегория 1</a></li>
+                        <li><a href="#">Подкатегория 2</a></li>
+                        <li><a href="#">Подкатегория 3</a></li>
+                        <li><a href="#">Подкатегория 4</a></li>
+                        <li><a href="#">Подкатегория 5</a></li>
+                        <li><a href="#">Подкатегория 6</a></li>
+                     </ul>
+                  </div>
+                  <img src="./assets/img/gazebo.png" alt="gazebo">
+               </div>
+
+               <div class="catalogue-product-card flex center between">
+                  <div class="catalogue-product-card-content">
+                     <h3 class="catalogue-product-card-title">
+                        Бани
+                     </h3>
+                     <ul class="catalogue-product-card-lists flex">
+                        <li><a href="#">Подкатегория 1</a></li>
+                        <li><a href="#">Подкатегория 2</a></li>
+                        <li><a href="#">...</a></li>
+                     </ul>
+                  </div>
+                  <img src="./assets/img/bath.png" alt="bath">
+               </div>
+
+               <div class="catalogue-product-card flex center between">
+                  <div class="catalogue-product-card-content">
+                     <h3 class="catalogue-product-card-title">
+                        Перголы
+                     </h3>
+                     <ul class="catalogue-product-card-lists flex">
+                        <li><a href="#">Подкатегория 1</a></li>
+                        <li><a href="#">Подкатегория 2</a></li>
+                        <li><a href="#">...</a></li>
+                     </ul>
+                  </div>
+                  <img src="./assets/img/pergola.png" alt="pergola">
+               </div>
+
+               <div class="catalogue-product-card flex center between">
+                  <div class="catalogue-product-card-content">
+                     <h3 class="catalogue-product-card-title">
+                        Бренды
+                     </h3>
+                     <ul class="catalogue-product-card-lists flex">
+                        <li><a href="#">Подкатегория 1</a></li>
+                        <li><a href="#">Подкатегория 2</a></li>
+                        <li><a href="#">...</a></li>
+                     </ul>
+                  </div>
+                  <img src="./assets/img/star.png" alt="star">
+               </div>
+
+               <div class="catalogue-product-card flex center between">
+                  <div class="catalogue-product-card-content">
+                     <h3 class="catalogue-product-card-title">
+                        Детские площадки
+                     </h3>
+                     <ul class="catalogue-product-card-lists flex">
+                        <li><a href="#">Подкатегория 1</a></li>
+                        <li><a href="#">Подкатегория 2</a></li>
+                        <li><a href="#">Подкатегория 3</a></li>
+                        <li><a href="#">Подкатегория 4</a></li>
+                        <li><a href="#">Подкатегория 5</a></li>
+                     </ul>
+                  </div>
+                  <img src="./assets/img/gorka.png" alt="gorka">
+               </div>
+
+               <div class="catalogue-product-card flex center between">
+                  <div class="catalogue-product-card-content">
+                     <h3 class="catalogue-product-card-title">
+                        Дома
+                     </h3>
+                     <ul class="catalogue-product-card-lists flex">
+                        <li><a href="#">Подкатегория 1</a></li>
+                        <li><a href="#">Подкатегория 2</a></li>
+                        <li><a href="#">Подкатегория 3</a></li>
+                        <li><a href="#">Подкатегория 4</a></li>
+                     </ul>
+                  </div>
+                  <img src="./assets/img/housecha.png" alt="housecha">
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="res-categories">
+      <div class="container">
+         <div class="catalogue-products">
+            <h2 class="catalogue-products-title">Категории</h2>
+            <div class="res-catalogue-products-cards">
+               <div class="res-catalogue-product-card flex center">
+                  <h3 class="catalogue-product-card-title">
+                     Беседки
+                  </h3>
+                  <img src="./assets/img/gazebo-res.png" alt="gazebo-res">
+               </div>
+               <div class="res-catalogue-product-card flex center">
+                  <h3 class="catalogue-product-card-title">
+                     Дома
+                  </h3>
+                  <img src="./assets/img/star-res.png" alt="star-res">
+               </div>
+               <div class="res-catalogue-product-card flex center">
+                  <h3 class="catalogue-product-card-title">
+                     Площадки
+                  </h3>
+                  <img src="./assets/img/gorka-res.png" alt="gorka-res">
+               </div>
+               <div class="res-catalogue-product-card flex center">
+                  <h3 class="catalogue-product-card-title">
+                     Перголы
+                  </h3>
+                  <img src="./assets/img/pergola-res.png" alt="pergola-res">
+               </div>
+               <div class="res-catalogue-product-card flex center">
+                  <h3 class="catalogue-product-card-title">
+                     Бани
+                  </h3>
+                  <img src="./assets/img/bath-res.png" alt="bath-res">
+               </div>
+               <div class="res-catalogue-product-card flex center">
+                  <h3 class="catalogue-product-card-title">
+                     Бренды
+                  </h3>
+                  <img src="./assets/img/star-res.png" alt="star-res">
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="course">
+      <div class="container">
+         <div class="course-card">
+            <h2 class="course-card-title">Хотите быть в курсе выгодных предложений, акций и новинок?</h2>
+            <form action="#" class="course-card-form flex between">
+               <label for="firstName"></label>
+               <input type="text" placeholder="Имя" id="firstName">
+
+               <label for="email"></label>
+               <input type="email" placeholder="Email" id="email">
+
+               <button type="submit" class="course-card-link">Подписаться</button>
+            </form>
+         </div>
+      </div>
+   </section>
+
+   <footer id="footer">
+      <div class="container">
+         <div class="footer-navbar">
+            <div class="logo-address flex center between">
+               <div class="logo">
+                  <div class="logo-buttons flex center">
+                     <a href="#" class="logo-btn"></a>
+                     <a href="#" class="logo-btn"></a>
+                     <a href="#" class="logo-btn"></a>
+                  </div>
+                  <h3 class="logo-text">Логотип вашего магазина</h3>
+               </div>
+               <div class="address">
+                  <p>Наш адрес:</p>
+                  <p>Москва, ул. Новокосимская д.7</p>
+               </div>
+            </div>
+
+            <div class="work-phone flex center between">
+               <div class="work-time">
+                  <p>График работы:</p>
+                  <p>Ежедневно с <span>9:00</span> до <span>21:00</span></p>
+               </div>
+               <div class="footer-order flex">
+                  <a class="order-btn" href="#footer-modal">Заказать звонок</a>
+                  <div id="footer-modal">
+                     <div class="modal-content">
+                        <h2 class="modal-content-title">
+                           Мы вам перезвоним
+                        </h2>
+                        <p class="modal-content-text">
+                           Заполните, пожалуйста, поля ниже, чтобы мы могли
+                           связаться с вами. Добавьте комментарий, чтобы менеджер
+                           оперативно ответил на все ваши вопросы
+                        </p>
+                        <form action="#" class="modal-form">
+                           <label for="name"></label>
+                           <input type="text" id="name" placeholder="Имя *">
+                           <label for="tel"></label>
+                           <input type="tel" id="tel" placeholder="Телефон *">
+                           <label for="comment"></label>
+                           <textarea id="comment" width="0" cols="30" rows="10"
+                              placeholder="Ваш комментарий"></textarea>
+
+                           <div class="rules flex center">
+                              <input type="checkbox" id="check">
+                              <label for="check">
+                                 Согласен с <b>обработкой персональных данных</b>
+                              </label>
+                           </div>
+
+                           <button class="modal-submit-btn" type="submit">Заказать звонок</button>
+                        </form>
+                        <a class="close-modal" href="#"><i class="fa-solid fa-xmark"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="footer-info">
+            <div class="footer-info-links flex">
+               <ul class="buyers-lists">
+                  <li>Для покупателей:</li>
+                  <li><a href="./delivery.html">Доставка</a></li>
+                  <li><a href="#">Гарантия</a></li>
+                  <li><a href="./about.html">Политика конфиденциальности</a></li>
+                  <li><a href="reviews.html">Отзывы</a></li>
+                  <li><a href="./our-work.html">Наши работы</a></li>
+               </ul>
+
+               <ul class="company-lists">
+                  <li>О компании:</li>
+                  <li><a href="./company.html">О Нас</a></li>
+                  <li><a href="./delivery.html">Доставка и оплата</a></li>
+                  <li><a href="./our-work.html">Наши работы</a></li>
+                  <li><a href="./contacts.html">Контакты</a></li>
+                  <li><a href="#">Гарантия</a></li>
+               </ul>
+
+               <ul class="categories-lists">
+                  <li>Категории:</li>
+                  <li><a href="#">Беседки</a></li>
+                  <li><a href="#">Бани</a></li>
+                  <li><a href="#">Площадки</a></li>
+                  <li><a href="#">Дома</a></li>
+                  <li><a href="#">Перголы</a></li>
+                  <li><a href="#">Бренды</a></li>
+               </ul>
+            </div>
+
+            <div class="footer-contacts flex between">
+               <div class="footer-contact flex">
+                  <p>Для регионов(звонок бесплатный)</p>
+                  <a class="footer-contact-tel" href="tel:+8 (800) 800-00-00">8 (800) <span>800-00-00</span></a>
+                  <a class="footer-contact-email" href="mailto:youremail@mailbox.ru">Email: youremail@mailbox.ru</a>
+                  <p>Мы в соц.сетях:</p>
+                  <div class="social-media flex">
+                     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                     <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+               </div>
+               <div class="footer-contact flex">
+                  <p>Для Москвы и Московской области</p>
+                  <a class="footer-contact-tel" href="tel:+8 (495) 700-00-00">8 (495) <span>700-00-00</span></a>
+                  <p>Сообщить об ошибке на сайте</p>
+                  <p>
+                     ООО  "Фаза Групп" <br>
+                     ИНН:   7751140879 <br>
+                     ОГРН: 1187746273461
+                  </p>
+               </div>
+            </div>
+         </div>
+
+         <div class="privacy">
+            <div class="privacy-doc">
+               <a class="privacy-link" href="#">Публичная оферта</a>
+               <p>
+                  2013-2021 - Товары для дач, 
+                  деревянные конструкции под любые нужды
+               </p>
+            </div>
+            <div class="payments flex center">
+               <p>Принимаем к оплате:</p>
+               <div class="payments-types flex center">
+                  <a href="#"><img src="./assets/img/visa.png" alt="visa"></a>
+                  <a href="#"><img src="./assets/img/jcb.png" alt="jcb"></a>
+                  <a href="#"><img src="./assets/img/maestro.png" alt="maestro"></a>
+                  <a href="#"><img src="./assets/img/mastercard.png" alt="mastercard"></a>
+                  <a href="#"><img src="./assets/img/yandex.png" alt="yandex"></a>
+                  <a href="#"><img src="./assets/img/mir.png" alt="mir"></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+</body>
+
+</html>
